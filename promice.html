@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const promise = new  Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            let x=100;
+            if(x)
+                resolve("Sucess <br>");
+            else    
+                reject("Failed <br>")
+        },2100)
+    })
+    const data = promise
+    .then(
+        (mess=>{
+            document.write(mess)
+        })  
+    )
+    .catch(
+        (err =>{
+            document.write(err)  
+        })
+    )
+    .finally( ()=>
+        document.write("*****Succcefully completd*****<br>")
+    )
+    document.write("Last Line <br>")
+
+    </script>
+</body>
+</html>

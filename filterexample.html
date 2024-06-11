@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        // const arr = [2, 5, 10, 8, 15];
+        // arr.filter((element) => 
+        // {
+        //     return element % 2 == 0;
+        // }).forEach(element => 
+        // {
+        //     document.write(element + " ");
+        // });
+        // document.write("<br>")
+        // document.write(arr.indexOf(8))
+
+
+        
+        // function check_unique(element, index, arr) 
+        // {
+        //     let idx = arr.indexOf(element);
+        //     return idx === index;
+        // }
+
+        // const arr = [13, 15, 1, 2, 4, 8, 6, 12, 4];
+
+        // arr.forEach((element, index) => 
+        // {
+        //     document.write(check_unique(element, index, arr) + " ");
+        // });
+        
+
+
+
+        // function find_sum(accumulator=0, x, index, arr)
+        // {
+        //     return accumulator + x
+        // }
+
+        // function find_max(mx, x)
+        // {
+        //     // document.write(mx +" ")
+        //     return Math.max(mx,x);
+        // }
+       
+        // const arr = [13, 5, 1, 2, 4, 8, 6, 16, 4];
+        // const sum  = arr.reduce(find_sum)
+        // document.write(sum + "<br>")
+
+        // document.write("<br>    " +arr.reduce(find_max))
+
+
+
+
+
+        ///Sliceeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+        // const arr = [13, 5, 1, 2, 4, 8, 6, 16, 4];
+        // document.write(arr.slice(2,4))
+        // document.write("<br>"+ arr)
+        // document.write("<br>")
+        // document.write(arr.splice(2,4))
+        // document.write("<br>"+ arr)
+
+        arr = [13, 5,[ 1, 2, 4,[ 8, 6,[ 16, 4]]]];
+        const newarr = arr.flat(Infinity)
+            .forEach(element => {
+                document.write(element + "<br>  ")
+            });
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

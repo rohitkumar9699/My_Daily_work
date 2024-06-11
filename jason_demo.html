@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Parsing Example</title>
+</head>
+<body>
+
+<script>
+    let data = '[{"Roll": 21110010871, "Name": "Roht", "Branch": "CSE"}, {"Roll": 21110010872, "Name": "John", "Branch": "ECE"}]';
+    const jsonArray = JSON.parse(data);
+    
+    document.write("<br>");
+
+    jsonArray.forEach(obj => {
+        for(let key in obj) {
+            document.write(key + " : " + obj[key] + "<br>");
+        }
+        document.write("<br>");
+    });
+
+    document.write("<br>");
+</script>
+
+</body>
+</html>

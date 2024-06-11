@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class Employee{
+        //     constructor(id, name, salary)
+        //     {
+        //         this.id =id;
+        //         this.name= name;
+        //         this.salary=salary;
+        //     }
+
+        // }
+        // const emp = new Employee(1, "Rohit", 10000);
+        // Object.seal(emp) //seal new insatance and methods
+        // Object.freeze(emp)// freez value
+        // emp.gender = "male";
+        // emp.salary = 50000;
+        // document.write("ID: "+emp.id+"<br>Name: "+emp.name+"<br> Salary: "+ emp.salary+"<br>")
+        // document.write(JSON.stringify(emp))
+
+
+        // const Employee = class{
+        //     constructor(id, name, salary)
+        //     {
+        //         this.id =id;
+        //         this.name= name;
+        //         this.salary=salary;
+        //     }
+
+        // }
+        // const emp = new Employee(1, "Rohit", 10000);
+        // Object.seal(emp) //seal new insatance and methods
+        // Object.freeze(emp)// freez value
+        // emp.gender = "male";
+        // emp.salary = 50000;
+        // document.write("ID: "+emp.id+"<br>Name: "+emp.name+"<br> Salary: "+ emp.salary+"<br>")
+        // document.write(JSON.stringify(emp))
+
+
+        const Employee =class Employee
+        {
+            name =""
+            constructor(id, name, salary)
+            {
+                this.id =id;
+                this.name= name;
+                this.salary=salary;
+            }
+            Print_Name() 
+            { 
+                document.write("Good Morning!!...   ")
+                return this.name;
+            }
+
+        }
+        const emp = new Employee(1, "Rohit", 10000);
+        // Object.seal(emp) //seal new insatance and methods
+        // Object.freeze(emp)// freez value
+        // emp.gender = "male";
+        // emp.salary = 50000;
+        // document.write("ID: "+emp.id+"<br>Name: "+emp.name+"<br> Salary: "+ emp.salary+"<br>")
+        document.write(JSON.stringify(emp))
+        document.write("<br>")
+        document.write(emp.Print_Name());
+        
+        document.write(Employee.Print_Name()) //using satatic funtion
+        
+    </script>
+</body>
+</html>

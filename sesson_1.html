@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class Point {
+        //     constructor(x,y)
+        //     {
+        //         this.x=x;
+        //         this.y=y
+        //     }
+        //     to_string()
+        //     {
+        //         return this.x + " , "+ this.y;
+        //     }
+
+        // }
+        // class point3D extends Point
+        // {
+        //     constructor(x,y,z)
+        //     {
+        //         super(x,y);
+        //         this.z=z;
+        //     }
+        //     to_string()
+        //     {
+        //         return super.to_string()+ " , "+this.z +"<br>";
+        //     }
+        // }
+        // const p = new point3D(4,5,6);
+        // document.write(JSON.stringify(p) + "<br>")
+        // document.write(p.to_string())
+
+
+
+
+
+        
+    const emp = {
+        First_Name: "Rohit",
+        Last_Name: "Kumar",
+        salary: 10000
+    };
+
+    // Store the object in localStorage
+    localStorage.setItem("data", JSON.stringify(emp));
+    document.write('Stored in localStorage<br>');
+
+    // Retrieve and parse the object from localStorage
+    const value = JSON.parse(localStorage.getItem("data"));
+    document.write('Retrieved from localStorage: ' + JSON.stringify(value) + '<br>');
+
+    // Store the object in sessionStorage
+    sessionStorage.setItem("sessiondata", JSON.stringify(emp));
+    document.write('Stored in sessionStorage<br>');
+
+    // Correctly formatted link
+    let seeson_link = "<a href='./sesson_2.html'>Session Management</a>";
+    document.write(seeson_link);
+
+
+     // Correctly formatted link Local storage
+    document.write("<br>")
+    let local_link = "<a href='./local_strogar.html'>Local Stotage</a>";
+    document.write(local_link);
+
+    </script>
+</body>
+</html>

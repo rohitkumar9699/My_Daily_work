@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr  =[10,55,899,65,55,66,6698,4112,333,6,30]
+        // arr.sort((x,y)=> y-x); // x-y accenc=ding        y-x  = reverse
+        // document.write(arr)
+
+
+        // document.write("<br><br>")
+        // const list1 = [
+        //     { id: 1, name: "Rohit", age: 20 },
+        //     { id: 2, name: "Anjali", age: 22 },
+        //     { id: 3, name: "Vikas", age: 25 },
+        //     { id: 4, name: "Priya", age: 23 }
+        // ];
+        // sort((x,y)=>y-x)
+        // list1.forEach(x => {
+        //     document.write("ID: " + x.id + ", Name: " + x.name + ", Age: " + x.age + "<br>");
+        // });
+        function findsquare(data , idx , arr)
+        {
+            return data*data
+        }
+        const arr = [2,5,10,8,15]
+        const newarr = arr.map(findsquare)
+    
+        newarr.forEach(x => {
+            document.write(x + " ")
+        });
+        document.write("<br>")
+
+        const newarr2 = arr.map((x)=> x*x)
+        newarr2.forEach(x => {
+            document.write(x + " ")
+        });
+        document.write("<br> ")
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Show Records</button>
+    <div id="output"></div>
+    <script>
+        const url = "http://localhost:3000/Data";
+        const data = {
+            "id": "45",
+            "Roll": 123568999,
+            "Name": "Brand",
+            "Branch": "ECE"
+        };
+
+        async function postData() {
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                document.getElementById("output").innerText = `Status: ${response.status}`;
+            } catch (err) {
+                document.getElementById("output").innerText = "Error";
+            }
+        }
+
+        const button = document.getElementById("btn");
+        button.addEventListener("click", (event) => {
+            event.preventDefault();
+            postData();
+        });
+    </script>
+</body>
+</html>
